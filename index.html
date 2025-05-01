@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-geolocation/dist/leaflet-geolocation.css" />
+    <title>Météo et Carte</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Météo et Carte</h1>
+        <div class="location-btn-container">
+            <button type="button" id="btnGeolocalisation">Localiser</button>
+        </div>
+        <input type="text" id="villeInput" placeholder="Entrez une ville">
+        <button type="button" id="btnMeteo">Obtenir la météo</button>
+        <div id="result" class="result-container"></div>
+        <div id="map" class="map-container"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-geolocation/dist/leaflet-geolocation.min.js"></script>
+    <script src="meteo.js"></script>
+</body>
+</html>
